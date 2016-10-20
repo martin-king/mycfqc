@@ -3,7 +3,7 @@
 #because I have not coded in checking (non)existence of variables.
 #Currently the set-ups below are to check CORDEX files.
 #This script also needs the cordex_variables_metadata.csv file.
-#The script also needs ncdump, grep
+#The script also needs ncdump, and grep.
 #------
 #This script does the following checks:
 #check filenames
