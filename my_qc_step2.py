@@ -2,7 +2,7 @@
 #This script does range of data values checks
 #I will write in the realistic ranges in a csv file.
 #Now, the example given below checks tas to be 100<tas<400.
-#Needs ncdump, grep, and cdo
+#Needs ncdump, grep, and cdo.
 
 import glob, os
 
