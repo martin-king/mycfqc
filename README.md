@@ -1,6 +1,6 @@
 # mycfqc
 
-The fist step is a basic but important quality control. In my experience, the most common errors in a file are missing data, wrong dates, and unacceptable values for the variable. It is almost a certainty that errors would exist in files without QC.
+The fist step is a basic but important quality control. In my experience, the most common errors in a file are missing data, wrong dates, or unacceptable values for the variable. It is almost a certainty that errors would exist in files without QC.
 
 The header in my_qc_step1.py describes what are being checked. Needs python, grep, and ncdump to run, otherwise no other further installation is necessary. I have used the scripts specifically on our CORDEX files, which should be also CF compliant. Note that this is for internal use. Data submitted to ESGF from international coordinated experiments such as CMIP and CORDEX needs to pass slightly more stringent tests with the DKRZ QC Checker.
 
