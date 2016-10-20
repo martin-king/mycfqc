@@ -1,0 +1,64 @@
+#only one space after a comma is allowed
+#must put the END suffix
+#must put max and mean always the last two fields
+#units is written as unit in the first line just to avoid grepping that line when doing ts
+
+var, standard_name, long_name, unit, coordinates, cell_methods, END
+tas, air_temperature, Near-Surface Air Temperature, K, lon lat height, time: mean, END
+tasmax, air_temperature, Daily Maximum Near-Surface Air Temperature, K, lon lat height, time: maximum within days time: mean over days, END
+tasmin, air_temperature, Daily Minimum Near-Surface Air Temperature, K, lon lat height, time: minimum within days time: mean over days, END
+pr, precipitation_flux, Precipitation, kg m-2 s-1, lon lat, time: mean, END
+prhmax, precipitation_flux, Daily Maximum Hourly Precipitation Rate, kg m-2 s-1, lon lat, time: maximum, END
+prsn, snowfall_flux, Snowfall Flux, kg m-2 s-1, lon lat, time: mean, END
+psl, air_pressure_at_sea_level, Sea Level Pressure, Pa, lon lat, time: mean, END
+huss, specific_humidity, Near-Surface Specific Humidity, 1, lon lat, time: mean, END
+sfcWind, wind_speed, Near-Surface Wind Speed, m s-1, lon lat height, time: mean, END
+sfcWindmax, wind_speed, Daily Maximum Near-Surface Wind Speed, m s-1, lon lat height, time: maximum within days time: mean over days, END
+wsgsmax, wind_speed_of_gust, Daily Maximum Near-Surface Wind Speed of Gust, m s-1, lon lat height, time: maximum, END
+clt, cloud_area_fraction, Total Cloud Fraction, %, lon lat, time: mean, END
+sund, duration_of_sunshine, Duration of Sunshine, s, lon lat, time: sum within days time: mean over days, END
+rsds, surface_downwelling_shortwave_flux_in_air, Surface Downwelling Shortwave Radiation, W m-2, lon lat, time: mean, END
+rlds, surface_downwelling_longwave_flux_in_air, Surface Downwelling Longwave Radiation, W m-2, lon lat, time: mean, END
+hfls, surface_upward_latent_heat_flux, Surface Upward Latent Heat Flux, W m-2, lon lat, time: mean, END
+hfss, surface_upward_sensible_heat_flux, Surface Upward Sensible Heat Flux, W m-2, lon lat, time: mean, END
+rsus, surface_upwelling_shortwave_flux_in_air, Surface Upwelling Shortwave Radiation, W m-2, lon lat, time: mean, END
+rlus, surface_upwelling_longwave_flux_in_air, Surface Upwelling Longwave Radiation, W m-2, lon lat, time: mean, END
+evspsbl, water_evaporation_flux, Evaporation, kg m-2 s-1, lon lat, time: mean, END
+mrfso, soil_frozen_water_content, Total Soil Frozen Water Content, kg m-2, lon lat, time: mean, END
+mrros, surface_runoff_flux, Surface Runoff, kg m-2 s-1, lon lat, time: mean, END
+mrro, runoff_flux, Total Runoff, kg m-2 s-1, lon lat, time: mean, END
+mrso, soil_moisture_content, Total Soil Moisture, kg m-2, lon lat, time: mean, END
+snw, surface_snow_amount, Surface Snow Amount, kg m-2, lon lat, time: mean, END
+snm, surface_snow_melt_flux, Surface Snow Melt, kg m-2 s-1, lon lat, time: mean, END
+rlut, toa_outgoing_longwave_flux, TOA Outgoing Longwave Radiation, W m-2, lon lat, time: mean, END
+rsdt, toa_incoming_shortwave_flux, TOA Incident Shortwave Radiation, W m-2, lon lat, time: mean, END
+rsut, toa_outgoing_shortwave_flux, TOA Outgoing Shortwave Radiation, W m-2, lon lat, time: mean, END
+uas, eastward_wind, Eastward Near-Surface Wind Velocity, m s-1, lon lat height, time: mean, END
+vas, northward_wind, Northward Near-Surface Wind Velocity, m s-1, lon lat height, time: mean, END
+ua850, eastward_wind, Eastward Wind, m s-1, lon lat plev, time: mean, END
+va850, northward_wind, Northward Wind, m s-1, lon lat plev, time: mean, END
+ta850, air_temperature, Air Temperature, K, lon lat plev, time: mean, END
+hus850, specific_humidity, Specific Humidity, 1, lon lat plev, time: mean, END
+ua500, eastward_wind, Eastward Wind, m s-1, lon lat plev, time: mean, END
+va500, northward_wind, Northward Wind, m s-1, lon lat plev, time: mean, END
+zg500, geopotential_height, Geopotential Height, m, lon lat plev, time: mean, END
+ta500, air_temperature, Air Temperature, K, lon lat plev, time: mean, END
+ua200, eastward_wind, Eastward Wind, m s-1, lon lat plev, time: mean, END
+va200, northward_wind, Northward Wind, m s-1, lon lat plev, time: mean, END
+ta200, air_temperature, Air Temperature, K, lon lat plev, time: mean, END
+zg200, geopotential_height, Geopotential Height, m, lon lat plev, time: mean, END
+snc, surface_snow_area_fraction, Snow Area Fraction, %, lon lat, time: mean, END
+snd, surface_snow_thickness, Snow Depth, m, lon lat, time: mean, END
+sic, sea_ice_area_fraction, Sea Ice Fraction, %, lon lat, time: mean, END
+ps, surface_air_pressure, Surface Air Pressure, Pa, lon lat, time: mean, END
+prc, convective_precipitation_flux, Convective Precipitation, kg m-2 s-1, lon lat, time: mean, END
+tauu, surface_downward_eastward_stress, Surface Downward Eastward Wind Stress, Pa, lon lat, time: mean, END
+tauv, surface_downward_northward_stress, Surface Downward Northward Wind Stress, Pa, lon lat, time: mean, END
+ts, surface_temperature, Surface Temperature, K, lon lat, time: mean, END
+zmla, atmosphere_boundary_layer_thickness, Height Of Boundary Layer, m, lon lat, time: mean, END
+prw, atmosphere_water_vapor_content, Water Vapor Path, kg m-2, lon lat, time: mean, END
+clwvi, atmosphere_cloud_condensed_water_content, Condensed Water Path, kg m-2, lon lat, time: mean, END
+clivi, atmosphere_cloud_ice_content, Ice Water Path, kg m-2, lon lat, time: mean, END
+clh, cloud_area_fraction_in_atmosphere_layer, High Level Cloud Fraction, %, lon lat plev, time: mean, END
+clm, cloud_area_fraction_in_atmosphere_layer, Mid Level Cloud Fraction, %, lon lat plev, time: mean, END
+cll, cloud_area_fraction_in_atmosphere_layer, Low Level Cloud Fraction, %, lon lat plev, time: mean, END
